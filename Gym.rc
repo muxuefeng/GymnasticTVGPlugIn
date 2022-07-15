@@ -1,0 +1,247 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Gym.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,2
+ PRODUCTVERSION 3,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "穆学峰"
+            VALUE "CompanyName", "新奥特（北京）视频技术有限公司"
+            VALUE "FileDescription", "体操项目插件"
+            VALUE "FileVersion", "3, 0, 0, 2"
+            VALUE "InternalName", "Gym.dll"
+            VALUE "LegalCopyright", "穆学峰"
+            VALUE "OriginalFilename", "Gym.dll"
+            VALUE "ProductName", "体操"
+            VALUE "ProductVersion", "3, 0, 0, 2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Gym DIALOGEX 0, 0, 868, 463
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_PLAYER1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,3,
+                    83,218,160
+    PUSHBUTTON      "Refresh DB",IDC_BUTTON_REFRESH,3,11,90,14
+    COMBOBOX        IDC_COMBO_STAGE,119,11,103,160,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_FIELD,260,10,328,149,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ROUND,627,10,31,135,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LIST_PLAYER2,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    223,83,218,160
+    CONTROL         "",IDC_LIST_PLAYER3,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    443,83,218,160
+    CONTROL         "",IDC_LIST_PLAYER4,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,3,
+                    267,218,160
+    CONTROL         "",IDC_LIST_PLAYER5,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    223,267,218,160
+    CONTROL         "",IDC_LIST_PLAYER6,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    443,267,218,160
+    PUSHBUTTON      "Fetch Score",IDC_BUTTON_GET_PLAYER_SCORE,531,26,129,30,
+                    NOT WS_VISIBLE
+    CONTROL         "",IDC_LIST_ALLROUD,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | NOT WS_VISIBLE | 
+                    WS_BORDER | WS_TABSTOP,663,83,199,218
+    LTEXT           "场:",IDC_STATIC,245,12,12,8
+    LTEXT           "轮:",IDC_STATIC,610,11,12,8
+    LTEXT           "---",IDC_STATIC_MSG,1,446,862,14
+    CONTROL         "颁奖",IDC_CHECK_AD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,669,11,32,10
+    LTEXT           "",IDC_STATIC_LOGO1,4,65,19,15
+    LTEXT           "",IDC_STATIC_LOGO2,228,65,19,15
+    LTEXT           "",IDC_STATIC_LOGO3,446,65,19,15
+    LTEXT           "",IDC_STATIC_LOGO4,4,249,19,15
+    LTEXT           "",IDC_STATIC_LOGO5,228,249,19,15
+    LTEXT           "",IDC_STATIC_LOGO6,446,248,19,15
+    CTEXT           "",IDC_STATIC_CURRENT_PLAYER,5,32,451,25
+    LTEXT           "",IDC_STATIC_GROUP1,35,68,70,10
+    LTEXT           "",IDC_STATIC_GROUP2,260,68,70,10
+    LTEXT           "",IDC_STATIC_GROUP3,476,68,70,10
+    LTEXT           "",IDC_STATIC_GROUP4,35,252,70,10
+    LTEXT           "",IDC_STATIC_GROUP5,260,252,70,10
+    LTEXT           "",IDC_STATIC_GROUP6,476,250,70,10
+    PUSHBUTTON      "Startlist 1",IDC_BUTTON_TRIGGER_STARTLIST11,112,61,53,
+                    22,NOT WS_VISIBLE
+    PUSHBUTTON      "Startlist 2",IDC_BUTTON_TRIGGER_STARTLIST12,167,61,53,
+                    22,NOT WS_VISIBLE
+    PUSHBUTTON      "Startlist 1",IDC_BUTTON_TRIGGER_STARTLIST21,331,61,53,
+                    22,NOT WS_VISIBLE
+    PUSHBUTTON      "Startlist 2",IDC_BUTTON_TRIGGER_STARTLIST22,387,61,53,
+                    22,NOT WS_VISIBLE
+    PUSHBUTTON      "Startlist 1",IDC_BUTTON_TRIGGER_STARTLIST31,551,61,53,
+                    22,NOT WS_VISIBLE
+    PUSHBUTTON      "Startlist 2",IDC_BUTTON_TRIGGER_STARTLIST32,607,61,53,
+                    22,NOT WS_VISIBLE
+    PUSHBUTTON      "Startlist 1",IDC_BUTTON_TRIGGER_STARTLIST41,112,245,53,
+                    22,NOT WS_VISIBLE
+    PUSHBUTTON      "Startlist 2",IDC_BUTTON_TRIGGER_STARTLIST42,168,245,53,
+                    22,NOT WS_VISIBLE
+    PUSHBUTTON      "Startlist 1",IDC_BUTTON_TRIGGER_STARTLIST51,333,244,53,
+                    22,NOT WS_VISIBLE
+    PUSHBUTTON      "Startlist 2",IDC_BUTTON_TRIGGER_STARTLIST52,389,244,53,
+                    22,NOT WS_VISIBLE
+    PUSHBUTTON      "Startlist 1",IDC_BUTTON_TRIGGER_STARTLIST61,553,244,53,
+                    22,NOT WS_VISIBLE
+    PUSHBUTTON      "Startlist 2",IDC_BUTTON_TRIGGER_STARTLIST62,608,244,53,
+                    22,NOT WS_VISIBLE
+    PUSHBUTTON      "Team Build",IDC_BUTTON_GET_TEAM_BUILD,703,99,129,30,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "All-round Build",IDC_BUTTON_GET_ALLROUND_BUILD,703,138,
+                    129,30,NOT WS_VISIBLE
+    LTEXT           "2022-7-15",IDC_STATIC_MSG2,1,0,83,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_Gym, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 863
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 460
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_R                   ICON                    "res\\R.ico"
+IDI_PH                  ICON                    "res\\PH.ico"
+IDI_BB                  ICON                    "res\\BB.ico"
+IDI_FX                  ICON                    "res\\FX.ico"
+IDI_UB                  ICON                    "res\\UB.ico"
+IDI_PB                  ICON                    "res\\PB.ico"
+IDI_HB                  ICON                    "res\\HB.ico"
+IDI_VT                  ICON                    "res\\VT.ico"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Gym.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
